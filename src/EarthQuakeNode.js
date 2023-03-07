@@ -3,9 +3,9 @@ import React from 'react';
 function EarthQuakeNode({title, mag, depth, date_hour, date_day}) {
 
     const reverseString = (str) => {
-        let splitString = str.split("-");
-        let reverseArray = splitString.reverse();
-        let joinArray = reverseArray.join("/");
+        let splitString = str?.split("-");
+        let reverseArray = splitString?.reverse();
+        let joinArray = reverseArray?.join("/");
 
         return joinArray;
     }
