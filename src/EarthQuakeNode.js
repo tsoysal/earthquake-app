@@ -1,13 +1,21 @@
 import React from 'react';
 
-function EarthQuakeNode({title, mag, depth, date_hour, date_day}) {
+function EarthQuakeNode({title, mag, depth, date}) {
 
     const reverseString = (str) => {
-        let splitString = str?.split("-");
-        let reverseArray = splitString?.reverse();
-        let joinArray = reverseArray?.join("/");
+        let splitString = str.split(".");
+        let reverseArray = splitString.reverse();
+        let joinArray = reverseArray.join("/");
 
         return joinArray;
+    }
+
+    const get_time = (date) => {
+       return date.slice(10);
+    }
+
+    const get_days = (date) => {
+      return date.slice(0, 10)
     }
 
   return (
@@ -22,8 +30,8 @@ function EarthQuakeNode({title, mag, depth, date_hour, date_day}) {
           <p>Derinlik: {depth} km</p>
         </section>
         <section className="infobox2">
-          <p>Saat: {date_hour}</p>
-          <p>Tarih: {reverseString(date_day)}</p>
+          <p>Saat: {get_time(date)}</p>
+          <p>Tarih: {reverseString(get_days(date))}</p>
         </section>
       </div>
     </div>

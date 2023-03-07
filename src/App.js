@@ -9,7 +9,7 @@ function App() {
   useEffect(()=>{
     fetch("https://api.orhanaydogdu.com.tr/deprem/kandilli/live?limit=30")
       .then((response) => response.json())
-      .then((data) => setList(data.result));
+      .then((data) => {setList(data.result); console.log(data)});
   }, [])
 
   return (
@@ -24,7 +24,7 @@ function App() {
 
       {list.map((node) => {
         let id = node.earthquake_id;
-        return <EarthQuakeNode key={id} title={node.title} mag={node.mag} depth={node.depth} date_day={node.date_day} date_hour={node.date_hour} />
+        return <EarthQuakeNode key={id} title={node.title} mag={node.mag} depth={node.depth} date={node.date} />
       })}
 
       <footer>
