@@ -1,5 +1,5 @@
 <h1>Live earthquake status app</h1>
-<h2><a href="turkiyesondepremler.online">turkiyesondepremler.online</a></h2>
+<h2><a href="https://turkiyesondepremler.online">turkiyesondepremler.online</a></h2>
 <h2>Screen shoots</h2>
 <h2></h2>
 
