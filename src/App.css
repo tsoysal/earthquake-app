@@ -34,13 +34,17 @@ h5 {
   margin-bottom: 10px;
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 .container {
-  font-size: 16px;
+  width: 400px;
   border: 1px solid #EC1818;
-  margin: 10px auto;
-  width: 80%;
   border-radius: 8px;
-  padding: 5px;
   color: white;
   background: rgb(121,9,9);
   background: linear-gradient(90deg, rgba(121,9,9,1) 15%, rgba(0,0,0,1) 90%);
@@ -76,4 +80,10 @@ footer {
   background: #000000;
   color: white;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px){
+  .wrapper {
+    
+  }
 }

@@ -22,10 +22,12 @@ function App() {
 
       <h5>En Son : </h5>
 
-      {list.map((node) => {
-        let id = node.earthquake_id;
-        return <EarthQuakeNode key={id} title={node.title} mag={node.mag} depth={node.depth} date={node.date} />
-      })}
+      <section className='wrapper'>
+        {list.map((node) => {
+          let id = node.earthquake_id;
+          return <EarthQuakeNode key={id} title={node.title} mag={node.mag} depth={node.depth} date={node.date} />
+        })}
+      </section>
 
       <footer>
         <p>
