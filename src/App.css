@@ -39,10 +39,11 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
+  padding: 10px;
 }
 
 .container {
-  width: 400px;
+  width: 300px;
   border: 1px solid #EC1818;
   border-radius: 8px;
   color: white;
@@ -80,10 +81,4 @@ footer {
   background: #000000;
   color: white;
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 800px){
-  .wrapper {
-    
-  }
 }
